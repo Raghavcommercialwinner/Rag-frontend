@@ -28,7 +28,7 @@ const Chatbox = () => {
   const handleApiSubmit = async () => {
     if (api.trim() !== '') {
       try {
-        const res = await fetch('https://ragapp-lk85.onrender.com/api', {
+        const res = await fetch('https://ragapp-3tew.onrender.com/api', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ api_key: api }),
@@ -54,7 +54,7 @@ const Chatbox = () => {
       setIsUploading(true);
 
       try {
-        const res = await fetch('https://ragapp-lk85.onrender.com/upload-file', {
+        const res = await fetch('https://ragapp-3tew.onrender.com/upload-file', {
           method: 'POST',
           body: formData,
         });
@@ -80,7 +80,7 @@ const Chatbox = () => {
     }
 
     try {
-      const res = await fetch('https://ragapp-lk85.onrender.com/query', {
+      const res = await fetch('https://ragapp-3tew.onrender.com/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query }),
