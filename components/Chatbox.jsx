@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const BACKEND = import.meta.env.VITE_BACKEND_URL ||               // Vite env (prod)
-                'https://ragapp-3tew.onrender.com';               // fallback
+                'http://127.0.0.1:8000/';               // fallback
 
 const Chatbox = () => {
   const selectedChat = localStorage.getItem('selectedChat') || '0';
